@@ -78,7 +78,7 @@ router.post(
 
 router.use((err, req, res, next) => {
   res.status(err.status || 500).json({
-    customMessage: "Don't panic, did you try using 42?",
+    customMessage: "Something went wrong",
     message: err.message,
     stack: err.stack,
   });
